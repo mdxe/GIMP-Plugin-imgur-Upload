@@ -57,13 +57,10 @@ def saveToPNG(procedure, run_mode, image, drawable, args, data):
         GObject.Value(GObject.TYPE_BOOLEAN, True), #transparent
     ])
     print("path: " + file_name)
-    if (os.path.exists(file_name)):        
+    if (os.path.exists(file_name)):
         imgur_link = uploadToImgur(file_name)
         clean = os.remove(file_name)
-        print(imgur_link)
-        Gimp.message(format(imgur_link))
-    else:
-        print("Error removing ", file_name)
+        Gimp.message(imgur_link)
 
 class ImgurUpload (Gimp.PlugIn):
     
@@ -83,9 +80,9 @@ class ImgurUpload (Gimp.PlugIn):
                                        "Upload image to Imgur",
                                        name);
         procedure.set_menu_label(N_("_Upload to Imgur"));
-        procedure.set_attribution("Alex Bouchard",
-                                  "(c) GPL V2.0 or later",
-                                  "2020");
+        procedure.set_attribution("mdxe",
+                                  "mdxe",
+                                  "2021");
         procedure.add_menu_path('<Image>/File/');
 
         return procedure
