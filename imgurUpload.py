@@ -61,7 +61,7 @@ def saveToPNG(procedure, run_mode, image, drawable, args, data):
         imgur_link = uploadToImgur(file_name)
         clean = os.remove(file_name)
         print(imgur_link)
-        Gimp.message("Sucessfully uploaded!\n{}".format(imgur_link))
+        Gimp.message(format(imgur_link))
     else:
         print("Error removing ", file_name)
 
