@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
-
 # imgurUpload.py -- upload image to Imgur
-# Copyright 2020 by Alex Bouchard.
-# Share and enjoy under the GPLv2 or later.
 
 import gi, pprint
 gi.require_version('Gimp', '3.0')
 from gi.repository import Gimp
 gi.require_version('GimpUi', '3.0')
 from gi.repository import GimpUi
-#gi.require_version('Gegl', '0.4')
-#from gi.repository import Gegl
 from gi.repository import GObject
 from gi.repository import GLib
 from gi.repository import Gio
-
-#gi.require_version('Gtk', '3.0')
-#from gi.repository import Gtk
-#gi.require_version('Gdk', '3.0')
-#from gi.repository import Gdk
 
 import sys, os, tempfile
 import gettext
