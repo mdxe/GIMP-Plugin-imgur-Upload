@@ -1,4 +1,4 @@
-GIMP plug-in to export your image to Imgur (for GIMP v2.99 or v3.0)
+GIMP plug-in to export your image to Imgur (for GIMP v2.10, v2.99 or v3.0)
 
 Installation
 ============

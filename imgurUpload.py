@@ -63,8 +63,7 @@ def saveToPNG(procedure, run_mode, image, drawable, args, data):
         Gimp.message(imgur_link)
 
 class ImgurUpload (Gimp.PlugIn):
-    
-    ## Parameters ##
+
     def do_query_procedures(self):
         self.set_translation_domain("gimp30-python",
             Gio.file_new_for_path(Gimp.locale_directory()))
