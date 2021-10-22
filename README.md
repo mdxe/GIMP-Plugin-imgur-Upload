@@ -3,7 +3,7 @@ GIMP plug-in to export your image to Imgur (for GIMP v2.10, v2.99 or v3.0)
 Installation
 ============
 
-To install this plugin, copy ``imgurUpload.py`` to your GIMP plugins folder. This
+To install this plugin, copy ``imgurUpload.py`` to your GIMP plugins folder, in a sub-directory. This
 folder can be found by going to Edit -> Preferences -> Folders -> Plug-Ins. Restart
 GIMP and the plugin can be accessed under the File menu.
 
